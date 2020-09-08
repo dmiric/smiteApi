@@ -1,3 +1,4 @@
+import { FetcherService } from './smite_api/fetcher.service';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 
@@ -24,6 +25,7 @@ import { SmiteUrlService } from './smite_api/smiteurl.service';
     PlayerController,
     GodController, AppController],
   providers: [
+    FetcherService,
     SmiteUrlService,
     TimestampService,
     PlayerService,
