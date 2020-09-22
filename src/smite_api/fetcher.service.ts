@@ -5,7 +5,7 @@ import { SmiteUrlService } from '../smite_api/smiteurl.service';
 
 @Injectable()
 export class FetcherService {
-
+//test
 constructor(private httpService: HttpService, private smiteUrlService: SmiteUrlService) { }
 
     async fetch(arg1: string, params: Array<string>): Promise<any> {
